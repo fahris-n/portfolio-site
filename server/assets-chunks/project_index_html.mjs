@@ -1,0 +1,16 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>PortfolioApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="monogram.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<style>body{background-color:#f1f3f5}
+</style><link rel="stylesheet" href="styles-DEZSRBOS.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-DEZSRBOS.css"></noscript></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
+  <app-root ng-version="19.2.6" ngh="1" ng-server-context="ssg"><nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary"><div class="container-fluid"><a href="#" class="navbar-brand"><img src="monogram.svg" alt="Logo" style="height: 50px;"></a><button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div id="navbarNavAltMarkup" class="collapse navbar-collapse"><div class="navbar-nav"><a routerlink="/" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-link" href="/" jsaction="click:;">Home</a><a routerlink="/project" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-link active" href="/project" aria-current="page" jsaction="click:;">Projects</a><a routerlink="/resume" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-link" href="/resume" jsaction="click:;">Resume</a><a routerlink="/contact" routerlinkactive="active" ariacurrentwhenactive="page" class="nav-link" href="/contact" jsaction="click:;">Contact Me</a></div></div></div></nav><router-outlet></router-outlet><app-project ngh="0"><h2>PROJECT PAGE</h2></app-project><!----></app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-RWLCF655.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"16":[{"i":"c225405690","r":1}]}}]}</script></body></html>`;
