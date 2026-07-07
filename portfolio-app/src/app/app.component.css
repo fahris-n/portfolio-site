@@ -1,7 +1,45 @@
-.footer {
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.brand img {
+    height: 40px;
+    display: block;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.site-nav a {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: var(--accent);
+}
+
+.site-footer {
+    font-family: var(--font-mono);
     font-size: 12px;
+    color: var(--text-secondary);
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     width: 100%;
     margin-top: 2rem;
 }

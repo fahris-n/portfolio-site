@@ -9,4 +9,5 @@ import { RouterOutlet, RouterLinkActive, RouterModule, RouterLink } from '@angul
 })
 export class AppComponent {
   title = 'portfolio-app';
+  protected readonly currentYear = new Date().getFullYear();
 }
