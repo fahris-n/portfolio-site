@@ -1,27 +1,186 @@
 .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 3rem 2rem;
-  }
+}
 
-  .eyebrow {
-    align-self: center;
-  }
+.resume-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
 
-  .resume-pdf {
-    width: 80%;
-    height: auto;
+.name {
+    color: var(--text-primary);
+    font-size: 32px;
+    margin: 0 0 0.35rem;
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin: 0 0 1rem;
+}
+
+.links-row {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.links-row svg {
+    height: 22px;
+    width: 22px;
+    color: var(--text-secondary);
+    transition: color 0.15s ease;
+}
+
+.links-row a:hover svg {
+    color: var(--accent);
+}
+
+.contact-link {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+    color: var(--bg);
+}
+
+.resume-card {
     background-color: var(--bg-elevated);
     border: 1px solid var(--border);
     border-radius: 8px;
-    overflow: hidden;
-  }
+}
 
-  .resume-pdf iframe {
-    width: 100%;
-    height: 1200px;
-    border: none;
-  }
+.resume-section {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin: 0 0 1.25rem;
+}
+
+.entry {
+    margin-bottom: 1.5rem;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.entry-title {
+    color: var(--text-primary);
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+}
+
+.entry-org {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 0;
+}
+
+.entry-dates {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.entry-link {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.entry-bullets {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.entry-bullets li {
+    margin-bottom: 0.5rem;
+}
+
+.entry-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+.stack-group {
+    margin-bottom: 1.25rem;
+}
+
+.stack-group:last-child {
+    margin-bottom: 0;
+}
+
+.stack-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem;
+}
+
+.stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.stack-tags span {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}

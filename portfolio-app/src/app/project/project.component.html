@@ -1,34 +1,60 @@
 <div class="container">
-    <p class="eyebrow">Projects</p>
-    <h1 class="page-title">My Projects</h1>
-    <div class="project-grid">
-      <div class="card">
-        <img src="https://i.imgur.com/cXlD2B9.gif" class="card-img" alt="Collaborative Software Engineering">
-        <div class="card-body">
-          <h2 class="card-title">CS314: Collaborative Software Engineering</h2>
-          <p class="tech-stack">Java, Maven, Postman, GitHub Projects, JSON, Agile, Scrum, REST APIs</p>
-          <p class="card-text">Worked as a team of 5 over a full semester to build out features on an existing Java codebase by creating REST APIs
-            following Agile methodologies. I was personally responsible for leading Sprint 4, and creating a data driven module that dynamically adjusted optimization levels based on the number of locations
-            and the client specified time constraints, resulting in shorter user tour lengths.</p>
-            <p class="card-text">Followed Agile and Scrum methodologies, with set sprints, daily scrums, sprint plannings, and code reviews. Used GitHub for issue tracking,
-              branch management, and peer reviews. Ensured code quality with unit tests in JUnit automated with Maven, as well as a CI pipeline. </p>
+    <section class="experience-section">
+        <p class="eyebrow">Experience</p>
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <h2 class="experience-title">Software Engineer (Practicum)</h2>
+                    <p class="experience-company">Colorado State University</p>
+                </div>
+                <p class="experience-dates">Jan 2025 – May 2025</p>
+            </div>
+            <ul class="experience-bullets">
+                <li>Extended the backend of a Java Spring Boot trip-planning service on a five-person Agile team, using a Git feature-branch workflow and peer code reviews, enabling users to plan and optimize multi-stop trip routes.</li>
+                <li>Designed and built RESTful API endpoints in Java with OOP principles on Linux, querying a MySQL database of 500K points of interest using SQL to recommend nearby stops, resulting in faster location-based suggestions for users.</li>
+                <li>Architected a request admission layer that applied linear regression on benchmarked runs to predict route runtime and skip the optimizer when the predicted time exceeded the user's budget, decreasing average routing latency.</li>
+            </ul>
         </div>
-      </div>
+    </section>
 
-      <div class="card">
-        <img src="https://i.imgur.com/z0moW8V.gif" class="card-img" alt="Potion Pile Up">
-        <div class="card-body">
-          <h2 class="card-title">Potion Pile Up</h2>
-          <p class="tech-stack">Python, JavaScript, Flask, SQL, HTML, CSS, Jinja, Bootstrap</p>
-          <p class="card-text">One personal project I'm really proud of is a full-stack Python web application I built. It was my first time creating a full-stack app,
-            so learning to handle GET and POST requests and communicating with a MySQL database I hosted online was really exciting. I used an ORM to manage database queries,
-            which made working with data easier and more secure. For the front end, I created a small JavaScript game where you play as a wizard catching falling potions.</p>
-            <p class="card-text">It taught me how to implement collision detection, animations, and keep the player within screen bounds. I also learned how to create an API endpoint
-              and send the users score to it using JSON, and then update the database to track high scores. I also implemented tokens to avoid Cross Site Request Forgery to protect user accounts.
-              Overall, it was a great learning experience that helped me connect backend and frontend development.
-            </p>
-          <a href="https://github.com/fahris-n/potion-pile-up" class="btn" target="_blank">View Project</a>
+    <section class="projects-section">
+        <p class="eyebrow">Projects</p>
+        <h1 class="page-title">My Projects</h1>
+        <div class="project-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Drone Telemetry System</h2>
+                    <p class="tech-stack">Java, Spring Boot, Apache Kafka, Python, PostgreSQL, React, WebSockets, Docker</p>
+                    <a href="https://www.youtube.com/watch?v=R61GLLwc1SQ" class="btn" target="_blank">Watch Demo</a>
+                    <p class="card-text">Built a real-time telemetry microservices pipeline in Java and Spring Boot, ingesting streamed telemetry from a Python-simulated drone fleet through Apache Kafka into a PostgreSQL database for live dashboard delivery. Streamed live updates to a React dashboard over WebSockets for real-time operations visibility, and containerized all pipeline services with Docker using isolated networking and persistent volumes.</p>
+                    <p class="card-text">Scaled throughput from 2,700 to 25,000 messages per second at sub-25ms end-to-end latency, holding consumer lag under 200 messages at peak load. Drove the gain by batching Python producer writes with orjson serialization instead of JSON, running 6 Kafka consumers in parallel, and replacing per-row inserts with batch writes to PostgreSQL.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Project Sentinel</h2>
+                    <p class="tech-stack">Go, Redis, JWT, Docker, Kubernetes, YAML</p>
+                    <a href="https://github.com/fahris-n/sentinel-local" class="btn" target="_blank">View Project</a>
+                    <p class="card-text">Architected an API gateway in Go that routes client requests to backend services, securing traffic with JWT authentication, role-based access control, and per-user rate limiting enforced atomically in Redis. Built a config-driven routing layer that loads backend services and per-route policy from YAML and constructs reverse-proxy handlers.</p>
+                    <p class="card-text">Containerized the gateway with Docker and ran it on a local Kubernetes cluster (Minikube), adopting fail-closed behavior on Redis outages and instrumenting structured per-request logging for observability.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Potion Pile Up</h2>
+                    <p class="tech-stack">Python, JavaScript, Flask, SQL, HTML, CSS, Jinja, Bootstrap</p>
+                    <a href="https://github.com/fahris-n/potion-pile-up" class="btn" target="_blank">View Project</a>
+                    <p class="card-text">One personal project I'm really proud of is a full-stack Python web application I built. It was my first time creating a full-stack app,
+                        so learning to handle GET and POST requests and communicating with a MySQL database I hosted online was really exciting. I used an ORM to manage database queries,
+                        which made working with data easier and more secure. For the front end, I created a small JavaScript game where you play as a wizard catching falling potions.</p>
+                    <p class="card-text">It taught me how to implement collision detection, animations, and keep the player within screen bounds. I also learned how to create an API endpoint
+                        and send the users score to it using JSON, and then update the database to track high scores. I also implemented tokens to avoid Cross Site Request Forgery to protect user accounts.
+                        Overall, it was a great learning experience that helped me connect backend and frontend development.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
+</div>

@@ -155,6 +155,23 @@
     line-height: 1.4;
 }
 
+.stack-group {
+    margin-bottom: 1rem;
+}
+
+.stack-group:last-child {
+    margin-bottom: 0;
+}
+
+.stack-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem;
+}
+
 .stack-tags {
     display: flex;
     flex-wrap: wrap;
